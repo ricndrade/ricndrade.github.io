@@ -1,0 +1,28 @@
+@import url('css/fonts.css');
+@import url('css/header.css');
+@import url('css/aside.css');
+@import url('css/footer.css');
+
+html, body  {
+    font-family: 'SFProDisplay', 'Archivo', Arial;
+    background-color:rgb(245, 245, 245);
+}
+
+.main {
+    display: flex;
+}
+
+aside {
+    flex-basis: 200px;
+    flex-grow: 0; 
+    flex-shrink: 1;
+}
+
+section {
+    padding:10px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+
+

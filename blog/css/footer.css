@@ -1,0 +1,7 @@
+footer {
+    flex-wrap: wrap;
+    background-color: #0F1C40;
+    color: aliceblue;
+    padding: 10px;
+    height: 20%;
+}

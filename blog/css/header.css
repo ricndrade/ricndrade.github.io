@@ -1,0 +1,46 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'SFProDisplay', 'Archivo', Arial;
+}
+
+.logo img{
+    margin-left: 23px;
+    margin-top: 20px;
+    height: 60px;
+}
+
+form {
+    display: flex;
+    float: right;
+    margin-right: 32px;
+    margin-top: 30px;
+}
+
+.navbar {
+    width:auto;
+    display: flex;
+    height: 2.5rem;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32px;
+    margin-top: 15px;
+}
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 32px;
+    position: relative;
+    align-items: center;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar li a:hover {
+    color: dimgray;
+}
+
