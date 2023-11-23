@@ -42,5 +42,6 @@ form {
 
 .navbar li a:hover {
     color: dimgray;
+    text-shadow: rgba(255,255,255,0.68) 0px 0px 13px;
 }
 
