@@ -27,6 +27,7 @@ form {
     padding-left: 32px;
     margin-top: 15px;
 }
+
 .navbar li {
     list-style: none;
     display: inline-block;
@@ -38,10 +39,10 @@ form {
     color: white;
     text-decoration: none;
     font-size: 15px;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
 }
 
 .navbar li a:hover {
-    color: dimgray;
-    text-shadow: rgba(255,255,255,0.68) 0px 0px 13px;
+    color: rgb(177, 177, 177);
+    text-shadow: rgba(255,255,255,0.68) 0px 0px 10px;
 }
-

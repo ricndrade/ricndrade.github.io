@@ -1,6 +1,8 @@
 aside {
-    background: rgb(105, 105, 105);
-    color:aliceblue;
-    width: 30%;
+    background: rgb(226, 226, 226);
+    color:rgb(70, 70, 70);
+    width: 200px;
     padding: 20px;
+    flex-grow: 0; 
+    flex-shrink: 1;
 }

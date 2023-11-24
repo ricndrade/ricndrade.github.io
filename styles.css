@@ -8,14 +8,22 @@ html, body  {
     background-color:rgb(245, 245, 245);
 }
 
-.main {
-    display: flex;
+::-webkit-scrollbar {
+    width: 4px;               /* width of the entire scrollbar */
+}
+  
+::-webkit-scrollbar-track {
+    background: rgb(245, 245, 245);        /* color of the tracking area */
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 185, 185);    /* color of the scroll thumb */
+    border-radius: 25px;       /* roundness of the scroll thumb */
+    border: 2px solid rgb(107, 107, 107);  /* creates padding around scroll thumb */
 }
 
-aside {
-    flex-basis: 200px;
-    flex-grow: 0; 
-    flex-shrink: 1;
+.main {
+    display: flex;
 }
 
 section {

@@ -1,7 +1,8 @@
 footer {
     flex-wrap: wrap;
-    background-color: #0F1C40;
-    color: aliceblue;
+    background-color:rgb(3, 16, 36);
+    color:#476999 ;
     padding: 10px;
     height: 20%;
+    position: relative;
 }
