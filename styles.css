@@ -40,6 +40,25 @@ section {
     display: flex;
 }
 
+.actual-big-bento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(0, 0, 0); /* Fondo del bento grande */
+    padding: 20px; /* Ajusta según sea necesario */
+    margin: 20px; /* Márgenes del bento grande */
+    border-radius: 10px; /* Esquinas redondeadas del bento grande */
+    text-align: left; /* Alineación central del texto e imágenes */
+}
+
+.actual-big-bento h1 {
+    padding-left: 6px;
+    color: rgb(245, 245, 245);
+    font-size: 5em;
+    width: 100%; /* Asegura que el texto ocupe todo el ancho del contenedor */
+}
 
 .big-bento {
     display: flex;
@@ -77,9 +96,25 @@ section {
 }
 
 @media (max-width: 768px) {
+    .big-bento h1 {
+        font-size: 3em;
+    }
     /* Estilos adicionales para pantallas más pequeñas (ajusta según sea necesario) */
     .small-bento {
         flex-basis: calc(50% - 20px); /* Dos bentos por fila en pantallas más pequeñas */
+    }
+    .main {
+        flex-direction: column; /* Cambia la dirección del flex container a columna */
+    }
+
+    .content {
+        order: 2; /* Cambia el orden del contenido, el aside se colocará después de la section */
+    }
+
+    aside {
+        order: 1; /* Cambia el orden del aside, se colocará antes de la section */
+        width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+        box-sizing: border-box;
     }
 }
 
