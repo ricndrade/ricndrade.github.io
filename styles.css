@@ -6,16 +6,24 @@
 html, body  {
     font-family: 'SFProDisplay', 'Archivo', Arial;
     background-color:rgb(245, 245, 245);
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgb(245, 245, 245);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgb(107, 107, 107);
+    border-radius: 50px;
 }
 
 .main {
     display: flex;
-}
-
-aside {
-    flex-basis: 200px;
-    flex-grow: 0; 
-    flex-shrink: 1;
 }
 
 section {
@@ -24,5 +32,43 @@ section {
     flex-grow: 1;
 }
 
+.big-bento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(226, 226, 226); /* Fondo del bento grande */
+    padding: 20px; /* Ajusta según sea necesario */
+    margin: 20px; /* Márgenes del bento grande */
+    border-radius: 10px; /* Esquinas redondeadas del bento grande */
+    text-align: left; /* Alineación central del texto e imágenes */
+}
 
+.big-bento h1 {
+    padding-left: 6px;
+    color: rgb(66, 66, 66);
+    font-size: 100px;
+    width: 100%; /* Asegura que el texto ocupe todo el ancho del contenedor */
+}
 
+.big-bento p {
+    padding-left: 10px;
+    width: 100%; /* Asegura que el texto ocupe todo el ancho del contenedor */
+    margin-bottom: 10px; /* Espaciado entre el texto y las imágenes */
+}
+
+.small-bento {
+    flex-basis: calc(25% - 20px); /* 33.33% para que haya tres bentos por fila */
+    margin: 10px; /* Espaciado entre los bentos pequeños */
+    overflow: hidden; /* Evita problemas de alineación si las imágenes son de diferentes tamaños */
+    border-radius: 8px; /* Esquinas redondeadas de los bentos pequeños */
+    overflow: hidden; /* Evita que las imágenes sobresalgan de las cajas */
+}
+
+.small-bento img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para las imágenes dentro de los bentos pequeños */
+    /* Otros estilos para las imágenes según sea necesario */
+}
