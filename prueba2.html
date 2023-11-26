@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vimeo Video</title>
+    <!-- Otros enlaces a archivos CSS y scripts JS si es necesario -->
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción 16:9 para hacer el contenedor responsive */
+            overflow: hidden;
+            margin: auto; /* Centrar el contenedor */
+            max-width: 1000px; /* Ancho máximo del contenedor */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (min-width: 768px) {
+            /* Estilo adicional para pantallas más grandes (por ejemplo, width: 75%) */
+            .video-container {
+                width: 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-container">
+    <iframe src="https://player.vimeo.com/video/885707194?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="¹Introducción"></iframe>
+</div>
+</body>
+</html>
