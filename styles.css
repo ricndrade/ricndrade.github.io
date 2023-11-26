@@ -96,23 +96,35 @@ section {
 }
 
 @media (max-width: 768px) {
+    .actual-big-bento {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .big-bento {
+        margin: 5px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
     .big-bento h1 {
         font-size: 3em;
     }
-    /* Estilos adicionales para pantallas más pequeñas (ajusta según sea necesario) */
+
     .small-bento {
-        flex-basis: calc(50% - 20px); /* Dos bentos por fila en pantallas más pequeñas */
+        flex-basis: calc(50% - 20px);
     }
+
     .main {
-        flex-direction: column; /* Cambia la dirección del flex container a columna */
+        flex-direction: column;
     }
 
     .content {
-        order: 2; /* Cambia el orden del contenido, el aside se colocará después de la section */
+        order: 2;
     }
 
     aside {
-        order: 1; /* Cambia el orden del aside, se colocará antes de la section */
+        order: 1; 
         width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
         box-sizing: border-box;
     }
@@ -122,9 +134,10 @@ section {
 
 .proyecto h1 {
     font-size: 3em;
-    color: #4d4100;
-    background-color: #c1ad3d;
+    color: #f9f1c3;
+    background-color: #000000;
     padding: 15px;
+    border-radius: 10px;
 }
 
 .video-container {
@@ -144,7 +157,6 @@ section {
 }
 
 @media (min-width: 768px) {
-    /* Estilo adicional para pantallas más grandes (por ejemplo, width: 75%) */
     .video-container {
         width: 75%;
     }
