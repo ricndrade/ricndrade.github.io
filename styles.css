@@ -46,7 +46,7 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: rgb(0, 0, 0); /* Fondo*/
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(41, 41, 41));
     padding: 20px;
     margin: 20px;
     border-radius: 10px; 
@@ -66,7 +66,7 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: rgb(226, 226, 226); 
+    background-image: linear-gradient(to bottom right, rgb(230, 230, 230), rgb(194, 194, 194)); 
     padding: 20px; 
     margin: 20px; 
     border-radius: 10px;
