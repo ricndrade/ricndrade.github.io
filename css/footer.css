@@ -1,12 +1,13 @@
 footer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* Ajusta según sea necesario */
     align-items: center;
     background-color: rgb(3, 16, 36);
     color: #476999;
     padding: 15px;
+    justify-content: space-between;
 }
+
+/*Cajas de texto */
 
 .fcolumn {
     flex: 1;
@@ -32,6 +33,8 @@ footer {
     color: rgba(255, 255, 255, 0.759);
 }
 
+/*Ajustes de Avisos y políticas*/
+
 .politicas ul {
     width: auto;
     display: flex;
@@ -41,7 +44,6 @@ footer {
 }
 
 .politicas ul li {
-    text-decoration: none;
     margin: 10px;
     padding: 5px;
     border-radius: 5px;
@@ -60,7 +62,7 @@ footer {
 @media (max-width: 768px) {
     footer {
         padding: 20px;
-        flex-direction: column; /* Cambia la dirección del flex container a columna */
+        flex-direction: column;
         align-items: stretch;
     }
 }

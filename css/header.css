@@ -4,17 +4,22 @@
     font-family: 'SFProDisplay', 'Archivo', Arial;
 }
 
+/*Ajustes del header*/
+
 .menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
 }
+
+/*Config del logo*/
 
 .logo img {
     height: 60px;
     padding-top: 5px;
 }
+
+/*Buscador de Google*/
 
 form {
     display: flex;
@@ -50,6 +55,7 @@ form button img {
     height: 20px;
 }
 
+/*Barra de navegación*/
 
 .navbar {
     width:auto;
