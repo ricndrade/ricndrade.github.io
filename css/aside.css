@@ -1,8 +1,38 @@
 aside {
     background: rgb(226, 226, 226);
     color:rgb(70, 70, 70);
-    width: 200px;
+    width: 250px;
     padding: 20px;
     flex-grow: 0; 
     flex-shrink: 1;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.caja {
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.caja img {
+    margin: auto;
+    display: block;
+}
+
+.caja h3 {
+    text-align: center;
+}
+
+.caja p {
+    text-align: justify;
+    color: rgb(100, 100, 100);
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

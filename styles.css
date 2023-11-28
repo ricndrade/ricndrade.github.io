@@ -1,29 +1,16 @@
+/* Importación de CSS de partials */
+
 @import url('css/fonts.css');
 @import url('css/header.css');
 @import url('css/aside.css');
 @import url('css/footer.css');
 
+/* General */
+
 html, body  {
     font-family: 'SFProDisplay', 'Archivo', Arial;
     background-color:rgb(245, 245, 245);
-}
-
-::-webkit-scrollbar {
-    width: 4px;               /* width of the entire scrollbar */
-}
-  
-::-webkit-scrollbar-track {
-    background: rgb(245, 245, 245);        /* color of the tracking area */
-}
-  
-::-webkit-scrollbar-thumb {
-    background-color: rgb(185, 185, 185);    /* color of the scroll thumb */
-    border-radius: 25px;       /* roundness of the scroll thumb */
-    border: 2px solid rgb(107, 107, 107);  /* creates padding around scroll thumb */
-}
-
-.main {
-    display: flex;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -32,5 +19,173 @@ section {
     flex-grow: 1;
 }
 
+/* Barra de desplazamiento */
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgb(245, 245, 245);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgb(107, 107, 107);
+    border-radius: 50px;
+}
 
+/* Index */
+
+.main {
+    display: flex;
+}
+
+.actual-big-bento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(0, 0, 0); /* Fondo*/
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; 
+    text-align: left;
+}
+
+.actual-big-bento h1 {
+    padding-left: 6px;
+    color: rgb(245, 245, 245);
+    font-size: 5em;
+    width: 100%;
+}
+
+.big-bento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(226, 226, 226); 
+    padding: 20px; 
+    margin: 20px; 
+    border-radius: 10px;
+    text-align: left; 
+}
+
+.big-bento h1 {
+    padding-left: 6px;
+    color: rgb(66, 66, 66);
+    font-size: 5em;
+    width: 100%; 
+}
+
+.small-bento {
+    flex-basis: calc(25% - 20px); 
+    margin: 10px;
+    overflow: hidden; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+.small-bento img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .actual-big-bento {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .big-bento {
+        margin: 5px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .big-bento h1 {
+        font-size: 3em;
+    }
+
+    .small-bento {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .content {
+        order: 2;
+    }
+
+    aside {
+        order: 1; 
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Proyecto */
+
+.proyecto h1 {
+    font-size: 3em;
+    color: #f9f1c3;
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.elvideo {
+    margin: auto;
+    height: 700px;
+    border-radius: 10px;
+}
+
+.elvideo iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    .elvideo {
+        width: 75%;
+    }
+}
+
+/*Contacto*/
+.contacto {
+    padding: 20px;
+}
+
+.contacto form {
+    all: unset;
+}
+
+.contacto form fieldset {
+    padding: 20px;
+}
+
+.contacto form textarea.comentariomovil {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .contacto form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto form textarea.comentariopc {
+        display: none;
+    }
+     
+    .contacto form textarea.comentariomovil {
+        display: block;
+    }
+}
