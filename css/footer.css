@@ -1,11 +1,74 @@
 footer {
-    flex-wrap: wrap;
-    background-color:rgb(3, 16, 36);
-    color:#476999 ;
+    display: flex;
+    background-image: url(../img/27.webp);
+    background-size: cover;
+    background-position: 50%;
+    color: #001634;
+    height: 150px;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 40px;
-    height: 200px;
-    position: relative;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/*Cajas de texto */
+
+.fcolumn {
+    flex: 1;
+    height: auto;
+    backdrop-filter: blur(25px);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.fcolumn ul li {
+    text-decoration: none;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.fcolumn ul li a {
+    color: #001634;
+    transition: color 0.5s ease;
+}
+
+.fcolumn ul li a:hover {
+    color: rgba(255, 255, 255, 0.759);
+}
+
+/*Ajustes de Avisos y políticas*/
+
+.politicas {
+    background-color: black;
+    padding: 10px;
+}
+
+.politicas ul {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.politicas ul li {
+    margin: 10px;
+    list-style: none;
+}
+
+.politicas ul li a {
+    text-decoration: none;
+    color: rgba(233, 233, 233, 0.553);
+    transition: color 0.5s ease;
+}
+
+.politicas ul li a:hover {
+    color: rgba(255, 255, 255, 0.882);
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+    }
 }
