@@ -1,68 +1,72 @@
 footer {
     display: flex;
-    align-items: center;
-    background-color: rgb(3, 16, 36);
-    color: #476999;
-    padding: 15px;
+    background-image: url(../img/27.webp);
+    background-size: cover;
+    background-position: 50%;
+    color: whitesmoke;
+    padding: 10px;
     justify-content: space-between;
 }
 
 /*Cajas de texto */
 
 .fcolumn {
+    text-align: center;
     flex: 1;
-    background-color: rgb(130, 209, 255);
-    padding: 10px;
+    backdrop-filter: blur(25px);
+    padding: 30px;
     border-radius: 8px;
     margin: 10px;
 }
 
 .fcolumn ul li {
-    justify-content: space-between;
-    text-decoration: none;
     border-radius: 5px;
     list-style: none;
 }
 
 .fcolumn ul li a {
-    color: #476999;
+    text-decoration: none;
+    color: whitesmoke;
     transition: color 0.5s ease;
 }
 
 .fcolumn ul li a:hover {
-    color: rgba(255, 255, 255, 0.759);
+    color: rgba(0, 0, 0, 0.863)
 }
 
 /*Ajustes de Avisos y políticas*/
+
+.politicas {
+    background-color: black;
+    padding: 10px;
+}
 
 .politicas ul {
     width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 10px 0 10px;
 }
 
 .politicas ul li {
     margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
     list-style: none;
 }
 
 .politicas ul li a {
-    color: rgba(255, 255, 255, 0.315);
+    text-decoration: none;
+    color: rgba(233, 233, 233, 0.553);
     transition: color 0.5s ease;
 }
 
 .politicas ul li a:hover {
-    color: rgba(255, 255, 255, 0.759);
+    color: rgba(255, 255, 255, 0.882);
 }
 
 @media (max-width: 768px) {
     footer {
-        padding: 20px;
         flex-direction: column;
         align-items: stretch;
+        height: auto;
     }
 }

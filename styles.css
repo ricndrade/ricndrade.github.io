@@ -125,24 +125,37 @@ section {
     background-color: #000000;
     padding: 15px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 20px;
+    text-align: center;
 }
 
 .elvideo {
-    margin: auto;
-    height: 700px;
+    margin: 20px;
+    height: 1000px;
     border-radius: 10px;
+    background-image: linear-gradient(to bottom , rgb(245, 245, 245) 20% , #f9f1c3);
 }
 
 .elvideo iframe {
-    width: 100%;
+    display: block;
+    margin: auto;
+    width: 75%;
     height: 100%;
     border: 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .proyecto h1 {
+        margin: 10px;
+    }
+
     .elvideo {
-        width: 75%;
+        height: 500px;
+        margin: 10px;
+    }
+
+    .elvideo iframe{
+        width: 100%;
     }
 }
 
@@ -157,6 +170,7 @@ section {
 
 .contacto form fieldset {
     padding: 20px;
+    width: 600px;
 }
 
 .contacto form textarea.comentariomovil {
@@ -165,10 +179,14 @@ section {
 
 @media (max-width: 768px) {
     .contacto form {
+        width: auto;
         display: flex;
         flex-direction: column;
     }
-
+    .contacto form fieldset {
+        padding: 20px;
+        width: auto;
+    }    
     .contacto form textarea.comentariopc {
         display: none;
     }
@@ -176,4 +194,9 @@ section {
     .contacto form textarea.comentariomovil {
         display: block;
     }
+}
+
+/*Aviso */
+.privacidad {
+    padding: 30px;
 }
