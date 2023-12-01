@@ -1,6 +1,6 @@
 footer {
     display: flex;
-    background-image: url(../img/27.webp);
+    background-image: url(../img//patten.gif);
     background-size: cover;
     background-position: 50%;
     color: whitesmoke;
@@ -8,19 +8,25 @@ footer {
     justify-content: space-between;
 }
 
+#icons {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 30px;
+} 
+
 /*Cajas de texto */
 
 .fcolumn {
     text-align: center;
     flex: 1;
     backdrop-filter: blur(25px);
-    padding: 30px;
+    padding: 50px;
     border-radius: 8px;
     margin: 10px;
 }
 
 .fcolumn ul li {
-    border-radius: 5px;
     list-style: none;
 }
 
@@ -32,6 +38,16 @@ footer {
 
 .fcolumn ul li a:hover {
     color: rgba(0, 0, 0, 0.863)
+}
+
+.fcolumn ul li a img {
+    height: 30px;
+    opacity: 75%;
+    transition: filter 0.25s ease;
+}
+
+.fcolumn ul li a img:hover {
+    filter: invert(1);
 }
 
 /*Ajustes de Avisos y políticas*/
