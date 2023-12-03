@@ -170,6 +170,7 @@ section {
 
 .contacto form fieldset {
     padding: 20px;
+    width: 600px;
 }
 
 .contacto form textarea.comentariomovil {
@@ -178,10 +179,14 @@ section {
 
 @media (max-width: 768px) {
     .contacto form {
+        width: auto;
         display: flex;
         flex-direction: column;
     }
-
+    .contacto form fieldset {
+        padding: 20px;
+        width: auto;
+    }    
     .contacto form textarea.comentariopc {
         display: none;
     }
@@ -189,4 +194,9 @@ section {
     .contacto form textarea.comentariomovil {
         display: block;
     }
+}
+
+/*Aviso */
+.privacidad {
+    padding: 30px;
 }

@@ -1,39 +1,53 @@
 footer {
     display: flex;
-    background-image: url(../img/27.webp);
+    background-image: url(../img//patten.gif);
     background-size: cover;
     background-position: 50%;
-    color: #001634;
-    height: 150px;
+    color: whitesmoke;
     padding: 10px;
     justify-content: space-between;
-    text-align: center;
 }
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 30px;
+} 
 
 /*Cajas de texto */
 
 .fcolumn {
+    text-align: center;
     flex: 1;
-    height: auto;
     backdrop-filter: blur(25px);
-    padding: 10px;
+    padding: 50px;
     border-radius: 8px;
     margin: 10px;
 }
 
 .fcolumn ul li {
-    text-decoration: none;
-    border-radius: 5px;
     list-style: none;
 }
 
 .fcolumn ul li a {
-    color: #001634;
+    text-decoration: none;
+    color: whitesmoke;
     transition: color 0.5s ease;
 }
 
 .fcolumn ul li a:hover {
-    color: rgba(255, 255, 255, 0.759);
+    color: rgba(46, 46, 46, 0.863)
+}
+
+.fcolumn ul li a img {
+    height: 30px;
+    opacity: 55%;
+    transition: opacity 0.5s ease;
+}
+
+.fcolumn ul li a img:hover {
+    opacity: 100%;
 }
 
 /*Ajustes de Avisos y políticas*/
@@ -70,5 +84,8 @@ footer {
         flex-direction: column;
         align-items: stretch;
         height: auto;
+    }
+    #icons {
+        padding: 5px;
     }
 }
